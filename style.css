@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.blok{
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 1000px;
+    background: #525151;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+img.zoomable {
+    width: 100%; /* Заповнити весь блок */
+    height: auto; /* Зберегти пропорції */
+    transition: transform 0.3s; /* Додати плавну анімацію */
+}
+
+img:hover {
+    transform: scale(2); /* Збільшити картинку при наведенні курсору */
+}
